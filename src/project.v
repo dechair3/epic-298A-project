@@ -18,7 +18,7 @@ module tt_um_up_counter (
 
   reg [7:0] counter = 8'b0;
 
-  always @(posedge clk || negedge rst_n) begin
+  always @(posedge clk) begin
     if(!rst_n) begin
       counter = 8'b0;
     end
