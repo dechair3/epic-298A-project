@@ -27,7 +27,7 @@ module tt_um_up_counter (
     end
   end
 
-  assign uo_out = ui_in[0] ? couter : {8{ui_in[1]}}
+  assign uo_out = ui_in[0] ? couter : {8{ui_in[1]}};
 
   assign uio_out = 8'b0;
 
